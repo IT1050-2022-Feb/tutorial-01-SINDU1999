@@ -10,10 +10,17 @@ sum = 1+2+3+....+ 99+100 = 5050
 
 n -> 1-
 sum = 1+2+3+...+10 = 55 */
-
 #include <stdio.h>
 int main() {
-  
-  return 0;
-}
+    int n, i, sum = 0;//declare variables
 
+    printf("Enter a positive integer: ");
+    scanf("%d", &n);
+
+    for (i = 1; i <= n; ++i) {
+        sum += i;
+    }
+
+    printf("Sum = %d", sum);//print sum
+    return 0;
+}
